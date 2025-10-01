@@ -48,7 +48,7 @@ In this project we deploy a Netflix clone application using a secure CI/CD pipel
 - Clone your application's code repository onto the EC2 instance:
     
     ```bash
-    git clone git@github.com:imran1509/DevSecOps-Project-Netflix-Deployment.git
+    git clone git@github.com:chiragsunny009/Devsecops-Netflix-Deployment-Projec.git
     ```
     
 
@@ -221,7 +221,7 @@ pipeline {
         }
         stage('Checkout from Git') {
             steps {
-                git branch: 'main', url: 'https://github.com/imran1509/DevSecOps-Project-Netflix-Deployment.git'
+                git branch: 'main', url: 'https://github.com/chiragsunny009/Devsecops-Netflix-Deployment-Project'
             }
         }
         stage("Sonarqube Analysis") {
@@ -312,7 +312,7 @@ pipeline{
         }
         stage('Checkout from Git'){
             steps{
-                git branch: 'main', url: 'https://github.com/imran1509/DevSecOps-Project-Netflix-Deployment.git'
+                git branch: 'main', url: 'https://github.com/chiragsunny009/Devsecops-Netflix-Deployment-Project'
             }
         }
         stage("Sonarqube Analysis "){
@@ -351,20 +351,20 @@ pipeline{
                 script{
                    withDockerRegistry(credentialsId: 'docker', toolName: 'docker'){   
                        sh "docker build --build-arg TMDB_V3_API_KEY=<your_API_key> -t netflix ."
-                       sh "docker tag netflix imran1509/netflix:latest "
-                       sh "docker push imran1509/netflix:latest "
+                       sh "docker tag netflix chiragsunny009/netflix:latest "
+                       sh "docker push chiragsunny009/netflix:latest "
                     }
                 }
             }
         }
         stage("TRIVY"){
             steps{
-                sh "trivy image imran1509/netflix:latest > trivyimage.txt" 
+                sh "trivy image chiragsunny009/netflix:latest > trivyimage.txt" 
             }
         }
         stage('Deploy to container'){
             steps{
-                sh 'docker run -d --name netflix -p 8081:80 imran1509/netflix:latest'
+                sh 'docker run -d --name netflix -p 8081:80 chiragsunny009/netflix:latest'
             }
         }
     }
@@ -818,7 +818,7 @@ That's it! You've successfully installed and set up Grafana to work with Prometh
 4. **Access your Application**
    - To Access the app make sure port 30007 is open in your security group and then open a new tab paste your NodeIP:30007, your app should be running.
   
-  ![](https://github.com/imran1509/DevSecOps-Project-Netflix-Deployment/blob/main/public/assets/home_page.png)
+  ![](https://github.com/chiragsunny009/DevSecOps-Project-Netflix-Deployment/blob/main/public/assets/home_page.png)
 
 <div align="center">
   <p align="center">Home Page</p>
