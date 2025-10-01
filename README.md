@@ -3,8 +3,6 @@
 
 ![](https://github.com/chiragsunny009/Devsecops-Netflix-Deployment-Project/blob/main/public/assets/Project_Netflix.png)
 
-
-
 # Deploy a Netflix Clone with a Complete CI/CD Pipeline using jenkins on a cloud in a DevSecOps Environment
 
 In this project we deploy a Netflix clone application using a secure CI/CD pipeline built with Jenkins, Docker, and Kubernetes. This project includes implementing code quality and security tools (SonarQube, Trivy), as well as monitoring solutions (Prometheus, Grafana) to ensure reliability and visibility. Key components you'll explore include:
@@ -831,6 +829,3 @@ That's it! You've successfully installed and set up Grafana to work with Prometh
 
 1. **Cleanup AWS EC2 Instances:**
     - Terminate AWS EC2 instances that are no longer needed.
-#   D e v s e c o p s - N e t f l i x - D e p l o y m e n t - P r o j e c t 
- 
- 
