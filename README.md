@@ -1,7 +1,9 @@
 
 # DevSecOps Project!
 
-![](https://github.com/imran1509/DevSecOps-Project-Netflix-Deployment/blob/main/public/assets/Project_Netflix.png)
+![](https://github.com/chiragsunny009/Devsecops-Netflix-Deployment-Project/blob/main/public/assets/Project_Netflix.png)
+
+
 
 # Deploy a Netflix Clone with a Complete CI/CD Pipeline using jenkins on a cloud in a DevSecOps Environment
 
@@ -829,5 +831,6 @@ That's it! You've successfully installed and set up Grafana to work with Prometh
 
 1. **Cleanup AWS EC2 Instances:**
     - Terminate AWS EC2 instances that are no longer needed.
-#   D e v s e c o p s - N e t f l i x - D e p l o y m e n t - P r o j e c t  
+#   D e v s e c o p s - N e t f l i x - D e p l o y m e n t - P r o j e c t 
+ 
  
